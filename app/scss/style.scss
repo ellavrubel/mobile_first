@@ -1,4 +1,88 @@
 @import "../../node_modules/normalize.css/normalize.css";
+@import "var.scss";
+@import "fonts.scss";
+
+html{
+  box-sizing: border-box;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+body{
+  min-width: 320px;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  padding: 0 20px;
+}
+
+.header{
+  background-color: $accent;
+
+  &__inner{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo__link{
+  margin-left: 8px;
+}
+
+.menu__btn{
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: none;
+  position: relative;
+
+      &::after{
+        content: "";
+        width: 12px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: $accent;
+        position: absolute;
+        top: 15px; left: 14px;
+        box-shadow: 0 4px 0 0 $accent, 0 8px 0 0 $accent;
+      }
+}
+
+
+// section "head"
+
+.head{
+  background-image: url("../img/head-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 193px;
+}
+
+.top-slider{
+  background-color: rgba(33, 33, 33, 0.5);
+
+  &__item{
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  &__title{
+
+  }
+}
 
 
 
@@ -34,5 +118,4 @@
 
 
 
-
-
+@import "media.scss";
