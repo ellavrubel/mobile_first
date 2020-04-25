@@ -13,15 +13,12 @@ $(function () {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 640,
                 settings: {
+                    arrows: false
+
                 }
             },
-            {
-                breakpoint: 480,
-                settings: {
-                }
-            }
         ]
     });
 
