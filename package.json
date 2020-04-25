@@ -9,7 +9,6 @@
   "keywords": [],
   "author": "EllaVrubel",
   "license": "ISC",
-
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
@@ -21,8 +20,7 @@
     "del": "^5.1.0",
     "normalize.css": "^8.0.1"
   },
-
   "dependencies": {
-
+    "slick-carousel": "^1.8.1"
   }
 }

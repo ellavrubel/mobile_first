@@ -29,10 +29,11 @@ const gulp = require('gulp'),
     });
 
     gulp.task('css', function () {
-        return gulp.src(
-            'node_modules/normalize.css/normalize.css'
-        )
-            .pipe(concat('_libs.scss'))
+        return gulp.src([
+            'node_modules/normalize.css/normalize.css',
+            'node_modules/slick-carousel/slick/slick.scss'
+        ])
+            .pipe(concat('libs.scss'))
             .pipe(gulp.dest('app/scss'))
             .pipe(browserSync.reload({stream: true}))
     });
@@ -44,7 +45,9 @@ const gulp = require('gulp'),
     });
 
     gulp.task('js', function () {
-        return gulp.src('app/*.js')
+        return gulp.src(
+            'node_modules/slick-carousel/slick/slick.js'
+        )
             .pipe(concat('libs.min.js'))
             .pipe(uglify())
             .pipe(gulp.dest('app/js'))
