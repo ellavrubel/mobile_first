@@ -14,6 +14,16 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
 
+ul, li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button{
+  padding: 0;
+}
+
 body{
   min-width: 320px;
   overflow-x: hidden;
@@ -79,6 +89,7 @@ body{
   &__item{
     color: #FFFFFF;
     text-align: center;
+    min-height: 193px;
   }
 
   &__title{
@@ -88,6 +99,52 @@ body{
     font-weight: 400;
     text-transform: uppercase;
     padding: 36px 0 28px;
+    max-width: 243px;
+    margin: 0 auto;
+    position: relative;
+
+      &::after{
+        content: '';
+        width: 60px;
+        height: 8px;
+        background-color: $text-color;
+        position: absolute;
+        bottom: 0; right: 0; left: 0;
+        margin: 0 auto;
+
+      }
+  }
+
+  &__btn{
+    display: none;
+  }
+
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0; right: 0;
+
+      .slick-active{
+        button{
+          background-color: transparent;
+          border: 1px solid #476E4D;
+        }
+
+      }
+
+      button{
+        font-size: 0;
+        border: none;
+        background-color: $accent;
+        padding: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 10px;
+
+      }
   }
 }
 

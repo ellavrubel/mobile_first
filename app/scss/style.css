@@ -47,6 +47,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+}
+
 body {
   min-width: 320px;
   overflow-x: hidden;
@@ -108,6 +118,7 @@ body {
 .top-slider__item {
   color: #FFFFFF;
   text-align: center;
+  min-height: 193px;
 }
 .top-slider__title {
   font-family: "RobotoCondensed-Regular", sans-serif;
@@ -116,6 +127,45 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   padding: 36px 0 28px;
+  max-width: 243px;
+  margin: 0 auto;
+  position: relative;
+}
+.top-slider__title::after {
+  content: "";
+  width: 60px;
+  height: 8px;
+  background-color: #4A4A4A;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.top-slider__btn {
+  display: none;
+}
+.top-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+.top-slider .slick-dots .slick-active button {
+  background-color: transparent;
+  border: 1px solid #476E4D;
+}
+.top-slider .slick-dots button {
+  font-size: 0;
+  border: none;
+  background-color: #2B4074;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
 }
 
 @media screen and (min-width: 640px) {
@@ -129,6 +179,53 @@ body {
 
   .header__inner {
     min-height: 100px;
+  }
+
+  .head {
+    min-height: 386px;
+  }
+
+  .top-slider__item {
+    min-height: 386px;
+  }
+  .top-slider__title {
+    font-size: 60px;
+    line-height: 60px;
+    min-width: 522px;
+    padding: 50px 0 15px;
+    margin: 0 auto 30px;
+  }
+  .top-slider__btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background-color: #2B4074;
+    color: #F9F6E5;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+  }
+  .top-slider .slick-arrow {
+    position: absolute;
+    right: 0;
+    z-index: 5;
+    width: 56px;
+    height: 56px;
+    border: none;
+  }
+  .top-slider .slick-prev {
+    background-color: #2B4074;
+    top: calc(50% - 56px);
+  }
+  .top-slider .slick-next {
+    background-color: #F9F6E5;
+    bottom: calc(50% - 56px);
+  }
+  .top-slider .slick-dots {
+    bottom: 50px;
   }
 }
 @media screen and (min-width: 768px) {
