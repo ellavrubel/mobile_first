@@ -22,6 +22,7 @@ ul, li{
 
 button{
   padding: 0;
+  cursor: pointer;
 }
 
 body{
@@ -84,7 +85,11 @@ body{
 }
 
 .top-slider{
-  background-color: rgba(33, 33, 33, 0.5);
+  //background-color: rgba(33, 33, 33, 0.5);
+
+  &__text{
+    display: none;
+  }
 
   &__item{
     color: #FFFFFF;
@@ -145,6 +150,45 @@ body{
         margin: 0 10px;
 
       }
+  }
+}
+
+// section call
+
+.call {
+  padding: 40px 0;
+  background-color: $accent;
+  font-style: normal;
+  text-align: center;
+
+  &__title {
+    @extend %roboto-500;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+    padding: 0 0 10px;
+  }
+
+  &__text {
+    @extend %dosis-300;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+
+  &__btn{
+    @extend %roboto-500;
+    display: block;
+    margin: 40px auto 0;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #2B4074;
+    text-transform: uppercase;
+    background-color: #F9F6E5;
+    border: none;
+    border-radius: 3px;
   }
 }
 
