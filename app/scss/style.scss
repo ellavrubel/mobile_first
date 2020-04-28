@@ -258,7 +258,9 @@ body{
   width: 238px;
   word-wrap: break-word;
 }
-
+.design{
+  margin: 20px;
+}
 .design-text{
   @extend %dosis-500;
   margin: 21px 0 16px;
@@ -272,6 +274,7 @@ body{
 }
 .service__img-link{
   margin: 16px 0 28px;
+  cursor: pointer;
 
   a{
     text-decoration: none;

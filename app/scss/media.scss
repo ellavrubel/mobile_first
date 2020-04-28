@@ -173,17 +173,23 @@
 
 
       &::after{
-        bottom: -73px; left: 0;
+        bottom: -73px; left: 6px;
         margin: 0;
       }
     }
     &__subtitle{
       text-align: left;
+      margin-left: 6px;
     }
     &__text{
       text-align: left;
-      width: 100%;
+      width: 93%;
+      margin: 30px 35px 40px 6px;
+      font-size: 17px;
     }
+  }
+  .design-wrapper {
+    width: 254px;
   }
 }
 
@@ -218,8 +224,18 @@
       padding: 16px;
       width: auto;
     }
-
   }
+
+  .service__inner-item{
+    flex: 0 0 25%;
+  }
+  .add {
+    width: 174px;
+  }
+  .design-wrapper {
+    width: unset;
+  }
+
 
 }
 
@@ -284,5 +300,30 @@
     &__text{
       max-width: 567px;
     }
+    .container{
+      padding: 0;
+    }
   }
+  .service{
+    display: flex;
+
+    &__inner{
+      flex: 0 0 65%;
+    }
+
+    &__title{
+      margin: 90px 0 64px;
+      text-align: left;
+
+      &::after{
+        bottom: -151px;
+        left: 0;
+      }
+    }
+
+    &__subtitle, &__text{
+      margin-left: 0;
+    }
+  }
+
 }
