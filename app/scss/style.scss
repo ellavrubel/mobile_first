@@ -20,6 +20,10 @@ ul, li{
   list-style: none;
 }
 
+img{
+  display: block;
+}
+
 button{
   padding: 0;
   cursor: pointer;
@@ -292,10 +296,56 @@ body{
   }
 }
 
+// section projects
 
+.projects{
+    text-align: center;
+    color: $accent;
+    @extend %robotoCondenced-400;
+    background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
 
+    &__title {
+      padding: 20px 0 70px;
+      color: #fff;
+      font-size: 24px;
+      line-height: 28px;
+      position: relative;
 
+      &::after {
+        content: "";
+        width: 50px;
+        height: 8px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 45px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+  &__text{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    padding: 20px 0;
+  }
 
+  &__img{
+    position: relative;
+  }
+
+  &__active{
+    visibility: hidden;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    margin: 0 auto;
+  }
+}
+
+.projects__img:hover .projects__active{
+  visibility: visible;
+}
 
 
 

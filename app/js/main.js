@@ -25,3 +25,11 @@ $(function () {
     });
 
 });
+
+// $(function() {
+//     $('.img-wrap').hover(function () {
+//         $(this).find('.play-icon').fadeIn(500);
+//     }, function () {
+//         $('.play-icon').fadeOut(200);
+//     });
+// });
