@@ -76,24 +76,24 @@
     }
   }
 
-  .service{
-    &__title{
+  .service {
+    &__title {
       font-size: 48px;
       line-height: 56px;
       margin: 25px 0 12px;
 
-      &::after{
+      &::after {
         bottom: -101px;
       }
     }
 
-    &__subtitle{
+    &__subtitle {
       font-size: 24px;
       line-height: 24px;
       margin: 0 0 68px;
     }
 
-    &__text{
+    &__text {
       font-size: 18px;
       line-height: 24px;
       margin: 30px 0 40px;
@@ -101,20 +101,44 @@
     }
   }
 
-  .service__inner{
+  .service__inner {
     display: flex;
     flex-wrap: wrap;
   }
-  .service__inner-item{
+  .service__inner-item {
     flex: 0 0 50%;
   }
-  .design{
+  .design {
     margin: 20px 0 10px;
   }
-  .design-text{
+  .design-text {
     margin: 15px 0;
   }
+  .projects {
 
+    &__container{
+      padding: 0 40px 40px;
+    }
+    &__text {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    &__img{
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 56px;
+      padding: 40px 0 70px;
+
+      &::after {
+        width: 100px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px ) {
@@ -191,6 +215,34 @@
   .design-wrapper {
     width: 254px;
   }
+  .projects {
+    &__container {
+      padding: 0 50px;
+    }
+    &__inner{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__title{
+      padding: 80px 0 112px;
+          &:after{
+            bottom: 82px;
+          }
+        }
+    &__text{
+      padding: 80px 0;
+    }
+
+    &__item{
+      flex: 0 0 40%;
+    }
+    &__item1,
+    &__item3{
+      margin-right: 30px;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px ){
@@ -236,6 +288,16 @@
     width: unset;
   }
 
+  .projects{
+    &__title{
+      &:after{
+        bottom: 80px;
+      }
+    }
+    &__img img{
+      width: 100%;
+    }
+  }
 
 }
 
@@ -324,6 +386,22 @@
     &__subtitle, &__text{
       margin-left: 0;
     }
+  }
+  .projects{
+    &__item1,
+    &__item3{
+      margin-right: 0;
+    }
+    &__item{
+      flex: 0 0 20%;
+      margin-left: 30px;
+    }
+    &__title{
+      &:after{
+        bottom: 86px;
+      }
+    }
+
   }
 
 }

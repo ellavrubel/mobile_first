@@ -304,6 +304,11 @@ body{
     @extend %robotoCondenced-400;
     background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
 
+  &__container{
+    padding-bottom: 40px;
+  }
+
+
     &__title {
       padding: 20px 0 70px;
       color: #fff;
@@ -333,19 +338,21 @@ body{
 
   &__img{
     position: relative;
+    width: 80%;
   }
 
   &__active{
-    visibility: hidden;
+    display: none;
     position: absolute;
     top: 0; left: 0; right: 0;
     margin: 0 auto;
   }
 }
 
-.projects__img:hover .projects__active{
-  visibility: visible;
-}
+    .active-visible{
+      display: block;
+      opacity: 100%;
+    }
 
 
 
