@@ -1,7 +1,5 @@
     $(function () {
 
-
-
         $('.top-slider').slick({
             dots: true,
             slidesToShow: 1,
@@ -27,19 +25,23 @@
 
 
 
+
     //  Projects, hover img
 
 
-    $('.projects__item').hover(function () {
-        $(this).toggleClass('active-visible');
+        $('.projects__item').hover(function () {
+            $(this).toggleClass('active-visible');
 
-    });
+        });
 
-    $('.projects__item').hover(function () {
-        $(this).find('.projects__active').fadeIn(500);
-    }, function () {
-        $('.projects__active').fadeOut(300);
-    });
+        $('.projects__item').hover(function () {
+            $(this).find('.projects__active').fadeIn(500);
+        }, function () {
+            $('.projects__active').fadeOut(300);
+        });
+
+
+
 
     //
 
