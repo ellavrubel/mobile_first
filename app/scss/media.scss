@@ -54,30 +54,33 @@
     .slick-prev {
       background-color: #2B4074;
       top: calc(50% - 56px);
-        img{
-          margin: 0 auto;
-        }
 
-      }
-      .slick-next{
-        bottom: calc(50% - 56px);
-        img{
-          margin: 0 auto;
-        }
+      img {
+        margin: 0 auto;
       }
 
     }
 
     .slick-next {
-      background-color: #F9F6E5;
       bottom: calc(50% - 56px);
 
+      img {
+        margin: 0 auto;
+      }
     }
 
-    .slick-dots {
-      bottom: 50px;
-    }
   }
+
+  .slick-next {
+    background-color: #F9F6E5;
+    bottom: calc(50% - 56px);
+
+  }
+
+  .slick-dots {
+    bottom: 50px;
+  }
+
 
   .call {
     padding: 50px 0 40px;
@@ -127,18 +130,20 @@
   }
   .projects {
 
-    &__container{
+    &__container {
       padding: 0 40px 40px;
     }
+
     &__text {
       font-weight: bold;
       font-size: 20px;
       line-height: 23px;
     }
 
-    &__img{
+    &__img {
       width: 100%;
-      img{
+
+      img {
         margin: 0 auto;
         width: 100%;
       }
@@ -154,6 +159,23 @@
       }
     }
   }
+
+  .team {
+
+    &__title {
+      font-size: 36px;
+      line-height: 38px;
+      padding: 40px 0 68px;
+    }
+    &__text {
+      width: 520px;
+    }
+    &__link{
+        padding: 50px 0;
+      }
+  }
+}
+
 
 
 @media screen and (min-width: 768px ) {
