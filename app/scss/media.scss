@@ -501,5 +501,16 @@
     }
 
   }
+  .team{
+    .container{
+      margin: 0 auto;
+      padding: 0 109px;
+      position: relative;
+    }
+    &__link{
+      right: unset;
+      left: 47%;
+    }
+  }
 
 }
