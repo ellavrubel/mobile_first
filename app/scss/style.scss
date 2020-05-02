@@ -340,6 +340,7 @@ body{
   &__img{
     position: relative;
     width: 80%;
+    margin: 0 auto;
   }
 
   &__active{
@@ -420,7 +421,44 @@ body{
     }
   }
 
+//  section news
 
+.news{
+  background: #F9F6E5;
+  @extend %robotoCondenced-400;
+  padding: 0 0 20px;
+
+  &__title{
+    text-align: center;
+    padding-bottom: 70px;
+    &::after{
+      bottom: 43px;
+    }
+  }
+  &__item6,
+  &__item7,
+  &__item2{
+    height: fit-content;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    img{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &__text{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    color: #4A4A4A;
+    margin-left: 40px;
+  }
+}
 
 
 
