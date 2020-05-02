@@ -334,6 +334,29 @@
       padding: 30px 0 45px;
     }
   }
+  .news{
+    height: 100%;
+    padding-bottom: 300px;
+    &__title{
+      padding: 40px 0 80px;
+      &::after{
+        margin: 0 auto;
+        right: 0; left: 0;
+        bottom: 40px;
+      }
+    }
+
+
+    &__item4{
+      transform: translateY(-70%);
+    }
+    &__item6{
+      transform: translateY(-120%);
+    }
+    &__item8{
+      transform: translateY(-97%);
+    }
+  }
 
 }
 
