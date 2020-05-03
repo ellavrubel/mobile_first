@@ -441,6 +441,28 @@
       bottom: -44px;
     }
   }
+  .news{
+    margin-top: 80px;
+    .container{
+      padding: 0 55px;
+    }
+    &__item{
+        flex: 0 0 33%;
+      //background-color: unset;
+      width: 80%;
+
+      //img{
+      //  width: 80%;
+
+      }
+    }
+    &__title {
+      padding: 60px 0 100px;
+      &::after{
+        bottom: 67px;
+      }
+  }
+
 
 }
 
