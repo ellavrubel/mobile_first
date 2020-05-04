@@ -360,31 +360,33 @@
 
 }
 
-@media screen and (min-width: 1024px ){
+@media screen and (min-width: 1024px ) {
 
-    .container{
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 80px;
-      position: relative;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px;
+    position: relative;
+  }
+
+  .top-slider {
+    &__item {
+      min-height: 618px;
     }
 
-    .top-slider {
-      &__item {
-        min-height: 618px;
-      }
-      &__title {
-        padding: 100px 0 0;
-        line-height: 84px;
-        font-size: 84px;
-        letter-spacing: 2px;
-        max-width: 750px;
-      }
-      .slick-dots {
-        bottom: 80px;
-      }
+    &__title {
+      padding: 100px 0 0;
+      line-height: 84px;
+      font-size: 84px;
+      letter-spacing: 2px;
+      max-width: 750px;
     }
-  .head{
+
+    .slick-dots {
+      bottom: 80px;
+    }
+  }
+  .head {
     min-height: 618px;
   }
   .call {
@@ -394,7 +396,7 @@
     }
   }
 
-  .service__inner-item{
+  .service__inner-item {
     flex: 0 0 25%;
   }
   .add {
@@ -404,66 +406,89 @@
     width: unset;
   }
 
-  .projects{
-    &__title{
-      &:after{
+  .projects {
+    &__title {
+      &:after {
         bottom: 80px;
       }
     }
-    &__img img{
+
+    &__img img {
       width: 100%;
     }
   }
-  .team{
-    .container{
+  .team {
+    .container {
       max-width: unset;
       margin: 0;
       padding: 0;
     }
-    &__img{
-      img{
-          width: 401px;
-          height: 380px;
+
+    &__img {
+      img {
+        width: 401px;
+        height: 380px;
       }
     }
-    &__title{
+
+    &__title {
       font-size: 48px;
       line-height: 56px;
     }
-    &__text{
+
+    &__text {
       font-size: 18px;
       line-height: 24px;
     }
 
-    &__link{
+    &__link {
       position: absolute;
       right: 312px;
       bottom: -44px;
     }
   }
-  .news{
+  .news {
     margin-top: 80px;
-    .container{
+    padding-bottom: 0;
+    height: 1600px;
+
+    .container {
       padding: 0 55px;
     }
-    &__item{
-        flex: 0 0 33%;
-      //background-color: unset;
+
+    &__item {
+      flex: 0 0 30%;
       width: 80%;
-
-      //img{
-      //  width: 80%;
-
-      }
     }
+
     &__title {
       padding: 60px 0 100px;
-      &::after{
+
+      &::after {
         bottom: 67px;
       }
+    }
+    &__item{
+      height: fit-content;
+    }
+
+    &__item4 {
+      transform: translateY(0);
+    }
+    &__item5{
+      transform: translateY(-68%);
+      background-color: unset;
+    }
+    &__item6 {
+      transform: translateY(-48%);
+    }
+    &__item7{
+      transform: translate(195%, -138%);
+    }
+    &__item8{
+      transform: translate(-83%, -63%);
+    }
   }
-
-
 }
 
 @media screen and (min-width: 1440px ){
