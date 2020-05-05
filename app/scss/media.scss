@@ -335,7 +335,7 @@
     }
   }
   .news{
-    height: calc(2000px + 10px);
+    height: calc(2000px + 10vh);
 
     &__title{
       padding: 40px 0 80px;
@@ -489,8 +489,7 @@
     &__item7{
       transform: translate(195%, -120%);
     }
-    &__item8{
-      transform: translate(-83%, -54%);
+    &__item8{transform: translate(-83%, -54%);
     }
   }
 }
@@ -664,7 +663,7 @@
     }
 
     &__item5 {
-      transform: translate(114%, -127%);
+      transform: translate(114%, -138%);
     }
     &__item6 {
       transform: translate(-113%, -108%);
