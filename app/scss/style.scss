@@ -527,6 +527,77 @@ body{
   }
 }
 
+// section footer
+
+.footer {
+  background-color: $accent;
+  color: #FFFFFF;
+  text-align: center;
+  @extend %roboto-400;
+  position: relative;
+
+  a, i {
+    display: block;
+  }
+
+  &__logo {
+    width: 230px;
+    margin: 0 auto;
+    position: absolute;
+    top: -5%;
+    right: 0;
+    left: 0;
+    background-color: $accent;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    padding: 85px 0 40px;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    width: 274px;
+    margin: 0 auto;
+  }
+
+  &__social {
+    i {
+      color: #FFFFFF;
+      font-size: 24px;
+      line-height: 14px;
+      margin-bottom: 20px;
+    }
+  }
+  &__contacts {
+    p{
+      margin: 0;
+    }
+    &-title {
+      @extend %robotoCondenced-400;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 2px;
+      color: #F9F6E5;
+     padding: 30px 0 20px;
+    }
+  }
+  &__phone{
+    a{
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+
+}
+
+
 
 
 
