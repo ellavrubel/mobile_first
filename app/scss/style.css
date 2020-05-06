@@ -634,7 +634,7 @@ body {
     width: unset;
   }
 
-  .projects__title:after {
+  m .projects__title:after {
     bottom: 80px;
   }
   .projects__img img {
