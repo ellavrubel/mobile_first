@@ -221,6 +221,25 @@
       bottom: 102px;
     }
   }
+  .footer{
+    &__text{
+      width: 513px;
+      text-align: left;
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &__social {
+      a {
+        display: inline-block;
+        padding: 20px 71px;
+        border: 1px solid #7EBF84;
+        margin-right: -5px;
+        i.fa-facebook-f{
+          border-left: none;
+        }
+      }
+    }
+  }
 }
 
 
