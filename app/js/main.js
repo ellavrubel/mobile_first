@@ -66,4 +66,16 @@
                 },
             ]
         });
+
+
+
+    //    кнопка ВВЕРХ
+
+        $('#up__btn').click(function (e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, 3000);
+
+        });
+
+
     });
