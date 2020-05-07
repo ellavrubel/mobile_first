@@ -262,6 +262,20 @@
       }
     }
   }
+  .up{
+    button{
+      margin:0 0 0 73%;
+      padding: 20px 20px 15px;
+      &::before,
+      &::after{
+        margin: 0 0 0 90%;
+        bottom: 25px;
+      }
+      &::before{
+        left: -1px;
+      }
+    }
+  }
 }
 
 
