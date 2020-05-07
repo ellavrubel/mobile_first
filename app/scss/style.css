@@ -1454,6 +1454,10 @@ body {
   .footer__inner {
     padding: 40px 0 0;
   }
+
+  .up button {
+    margin: 0 0 0 75%;
+  }
 }
 @media screen and (min-width: 992px) {
   .news {
@@ -1583,6 +1587,10 @@ body {
   .footer__text {
     margin: 0 40px 60px;
     padding: 121px 0 40px;
+  }
+
+  .up button {
+    margin: 0 0 0 80%;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1741,6 +1749,10 @@ body {
   }
   .footer__social a {
     padding: 23px 118px;
+  }
+
+  .up button {
+    margin: 0 0 0 83%;
   }
 }
 
